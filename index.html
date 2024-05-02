@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+        <title>Calculadora Pika</title>
+        <link rel="stylesheet" href="main.css" />
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="calc">
+            <h1>Calculadora Pika</h1>
+            <input class="result" type="text" id="result">
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="sinFunction()">sin</button></td>
+                    <td><button class="botao" onclick="cosFunction()">cos</button></td>
+                    <td><button class="botao" onclick="tanFunction()">tan</button></td>
+                    <td><button class="botao" onclick="addValue('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="addValue(1)">1</button></td>
+                    <td><button class="botao"  onclick="addValue(2)">2</button></td>
+                    <td><button class="botao"  onclick="addValue(3)">3</button></td>
+                    <td><button class="botao"  onclick="addValue('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao"  onclick="addValue(4)">4</button></td>
+                    <td><button class="botao"  onclick="addValue(5)">5</button></td>
+                    <td><button class="botao"  onclick="addValue(6)">6</button></td>
+                    <td><button class="botao"  onclick="addValue('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao"  onclick="addValue(7)">7</button></td>
+                    <td><button class="botao"  onclick="addValue(8)">8</button></td>
+                    <td><button class="botao"  onclick="addValue(9)">9</button></td>
+                    <td><button class="botao"  onclick="addValue('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao"  onclick="addValue(0)">0</button></td>
+                    <td><button class="botao"  onclick="addValue('.')">.</button></td>
+                    <td><button class="botao"  onclick="cleanResult()">AC</button></td>
+                    <td><button class="botao"  onclick="printResult()">=</button></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p>tutorial:</p>
+            <p>1 - óbvio, calcule.</p>
+            <p>2 - para sin, cos e tan, primeiro digite o número e depois clique na função.</p>
+            <p>obs.: sin, cos e tan estão em graus.</p>
+        </div>
+        <div class="credits">
+            <p>made by: Guilherme Figueira</p>
+        </div>
+    </body>
+</html>
